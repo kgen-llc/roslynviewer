@@ -1,0 +1,39 @@
+name: Continuous Build
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '7.0.x'
+        dotnet-quality: 'ga'
+    
+    - name: Install dependencies
+      working-directory: ./source
+      run: dotnet restore
+
+    - name: Build
+      working-directory: ./source
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Test
+      working-directory: ./source
+      run: dotnet test --no-restore --verbosity normal --logger "trx;LogFileName=test-results.trx" --collect:"XPlat Code Coverage" 
+      
+    - uses: dorny/test-reporter@v1
+      if: success() || failure()
+      with:
+        name: DotNET Tests
+        working-directory: ./source
+        path: "**/test-results.trx"
+        reporter: dotnet-trx
+        fail-on-error: true
+        list-suites: all
+        list-tests: all
+        max-annotations: 10

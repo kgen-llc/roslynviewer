@@ -1,0 +1,40 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:self="clr-namespace:roslynviewer"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="roslynviewer.MainWindow"
+        Title="Roslyn Viewer">
+    <Window.Resources>
+        <self:ToFullStringConverter x:Key="toFullStringConverter"/>
+    </Window.Resources>
+    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,*,100">
+         <Menu Grid.Row="0">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <TextBox Grid.Column="0" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" Text="{Binding SourceCode}" />
+    
+        <TreeView x:Name="tree" Grid.Column="1" Grid.Row="1" Items="{Binding SyntaxTreeRoot}">
+            <TreeView.DataTemplates>
+                <TreeDataTemplate  DataType="self:SyntaxNodeViewModel" ItemsSource="{Binding Children}">
+                        <TextBlock Text="{Binding Node.KindText}" />
+                    </TreeDataTemplate>
+
+                <TreeDataTemplate  DataType="self:SyntaxTokenViewModel" ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding KindText}" />
+                </TreeDataTemplate>
+
+                 <DataTemplate  DataType="self:SyntaxTriviaViewModel">
+                    <StackPanel>
+                        <TextBlock Text="{Binding KindText}" />
+                    </StackPanel>
+                </DataTemplate>
+            </TreeView.DataTemplates>
+        </TreeView>
+        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding #tree.SelectedItem.Node , Converter={StaticResource toFullStringConverter}}" />
+    </Grid>
+</Window>
