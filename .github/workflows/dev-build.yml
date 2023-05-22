@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --configuration ${{ env.CONFIGURATION }} --no-restore
 
     - name: Upload nuget
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: nuget-package
         path: 'source/roslynviewer/bin/${{ env.CONFIGURATION }}/roslynviewer*nupkg'
