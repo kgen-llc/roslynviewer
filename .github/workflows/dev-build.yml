@@ -28,7 +28,7 @@ jobs:
     - name: Upload nuget
       uses: actions/upload-artifact@v2
       with:
-        name: MacOS-App
+        name: nuget-package
         path: 'source/roslynviewer/bin/${{ env.CONFIGURATION }}/roslynviewer*nupkg'
 
     - name: Test
