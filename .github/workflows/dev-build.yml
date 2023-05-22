@@ -23,7 +23,7 @@ jobs:
 
     - name: Build
       working-directory: ./source
-      run: dotnet build --configuration ${{ env.CONFIGURATION }} --no-restore
+      run: dotnet build --configuration ${{ env.CONFIGURATION }}
 
     - name: Upload nuget
       uses: actions/upload-artifact@v2
