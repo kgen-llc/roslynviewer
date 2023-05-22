@@ -2,6 +2,9 @@ name: Continuous Build
 
 on: [push]
 
+env:
+  CONFIGURATION: Release
+
 jobs:
   build:
 
@@ -20,7 +23,13 @@ jobs:
 
     - name: Build
       working-directory: ./source
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration ${{ env.CONFIGURATION }} --no-restore
+
+    - name: Upload nuget
+      uses: actions/upload-artifact@v2
+      with:
+        name: MacOS-App
+        path: 'source/roslynviewer/bin/${{ env.CONFIGURATION }}/roslynviewer*nupkg'
 
     - name: Test
       working-directory: ./source
