@@ -31,7 +31,7 @@ public class SyntaxNodeViewModel
 
     public static object CreateViewModel(SyntaxNodeOrToken nodeOrToken) {
         if(nodeOrToken.IsNode) {
-            return new SyntaxNodeViewModel(nodeOrToken.AsNode());
+            return new SyntaxNodeViewModel(nodeOrToken.AsNode()!);
         }
         if(nodeOrToken.IsToken) {
             return new SyntaxTokenViewModel(nodeOrToken.AsToken());
