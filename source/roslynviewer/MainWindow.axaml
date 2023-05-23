@@ -1,40 +1,71 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:self="clr-namespace:roslynviewer"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="roslynviewer.MainWindow"
-        Title="Roslyn Viewer">
+<Window
+    x:Class="roslynviewer.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:self="clr-namespace:roslynviewer"
+    Title="{Binding ApplicationTitle}"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Icon="Assets/icon.png"
+    mc:Ignorable="d">
     <Window.Resources>
-        <self:ToFullStringConverter x:Key="toFullStringConverter"/>
+        <self:ToFullStringConverter x:Key="toFullStringConverter" />
     </Window.Resources>
-    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,*,100">
-         <Menu Grid.Row="0">
-            <MenuItem Header="_File">
-                <MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,*,100">
+        <Menu Grid.Row="0">
+            <MenuItem Header="{x:Static self:ApplicationResource.FileMenuHeader}">
+                <MenuItem Command="{Binding ExitCommand}" Header="{x:Static self:ApplicationResource.ExitMenuHeader}" />
             </MenuItem>
         </Menu>
 
-        <TextBox Grid.Column="0" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" Text="{Binding SourceCode}" />
-    
-        <TreeView x:Name="tree" Grid.Column="1" Grid.Row="1" Items="{Binding SyntaxTreeRoot}">
-            <TreeView.DataTemplates>
-                <TreeDataTemplate  DataType="self:SyntaxNodeViewModel" ItemsSource="{Binding Children}">
-                        <TextBlock Text="{Binding Node.KindText}" />
-                    </TreeDataTemplate>
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            Margin="5"
+            Text="{x:Static self:ApplicationResource.SourceCodeHeader}" />
 
-                <TreeDataTemplate  DataType="self:SyntaxTokenViewModel" ItemsSource="{Binding Children}">
+        <TextBox
+            Grid.Row="2"
+            Grid.Column="0"
+            AcceptsReturn="True"
+            Text="{Binding SourceCode}"
+            TextWrapping="Wrap"
+            Watermark="{x:Static self:ApplicationResource.SourceCodeWatermark}" />
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="5"
+            Text="{x:Static self:ApplicationResource.RoslynTreeHeader}" />
+
+        <TreeView
+            x:Name="tree"
+            Grid.Row="2"
+            Grid.Column="1"
+            Items="{Binding SyntaxTreeRoot}">
+            <TreeView.DataTemplates>
+                <TreeDataTemplate DataType="self:SyntaxNodeViewModel" ItemsSource="{Binding Children}">
+                    <TextBlock Text="{Binding Node.KindText}" />
+                </TreeDataTemplate>
+
+                <TreeDataTemplate DataType="self:SyntaxTokenViewModel" ItemsSource="{Binding Children}">
                     <TextBlock Text="{Binding KindText}" />
                 </TreeDataTemplate>
 
-                 <DataTemplate  DataType="self:SyntaxTriviaViewModel">
+                <DataTemplate DataType="self:SyntaxTriviaViewModel">
                     <StackPanel>
                         <TextBlock Text="{Binding KindText}" />
                     </StackPanel>
                 </DataTemplate>
             </TreeView.DataTemplates>
         </TreeView>
-        <TextBlock Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding #tree.SelectedItem.Node , Converter={StaticResource toFullStringConverter}}" />
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Padding="3"
+            Text="{Binding #tree.SelectedItem.Node, Converter={StaticResource toFullStringConverter}, FallbackValue={x:Static self:ApplicationResource.NodeDisplayWatermark}}" />
     </Grid>
 </Window>
