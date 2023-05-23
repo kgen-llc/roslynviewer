@@ -3,6 +3,8 @@ namespace roslynviewer;
 using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
+using Avalonia.Data;
+
 using Microsoft.CodeAnalysis;
 
 public class ToFullStringConverter : IValueConverter
