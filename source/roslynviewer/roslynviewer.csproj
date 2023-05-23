@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
@@ -10,22 +10,59 @@
     <Version>0.1.0-pre1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageId>kgen.$(AssemblyName)</PackageId>
+    <Title>KGen Roslyn Viewer</Title>
+    <Company>KGen LLC</Company>
+    <Authors>Frederic Forjan</Authors>
+    <PackageProjectUrl>https://github.com/kgen-llc/roslynviewer</PackageProjectUrl>
+    <AnalysisLevel>latest-all</AnalysisLevel>
+    <Description>DotNet Tool to explore a roslyn tree.</Description>
+    <Product>Roslyn Viewer</Product>
+    <Copyright>Copyright  2023 KGEN LLC</Copyright>
+    <PackageIcon>Assets/icon.png</PackageIcon>
+    <ApplicationIcon>Assets/icon.ico</ApplicationIcon>
   </PropertyGroup>
+ 
+	<ItemGroup>
+		<AvaloniaResource Include="Assets\**" />
+	</ItemGroup>
 
   <ItemGroup>
-    <ProjectCapability Include="Avalonia"/>
+    <ProjectCapability Include="Avalonia" />
     <TrimmerRootAssembly Include="Avalonia.Themes.Fluent" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.10.21" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.21" />
-    <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
-    <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="0.10.21" />
     <PackageReference Include="XamlNameReferenceGenerator" Version="1.6.1" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.6.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.6.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.6.0" /> 
 
-    <None Include="../../README.md" Pack="true" PackagePath="\"/>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="ApplicationResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ApplicationResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ApplicationResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplicationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\icon.png">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
   </ItemGroup>
 </Project>
