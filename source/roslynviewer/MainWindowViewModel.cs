@@ -50,4 +50,8 @@ public class MainWindowViewModel  : ObservableObject
     public void ExitCommand() {
         this.controlledApplicationLifetime.Shutdown(0);
     }
+
+    public void AboutCommand() {
+        "https://github.com/kgen-llc/roslynviewer".OpenUrl();
+    }
 }
