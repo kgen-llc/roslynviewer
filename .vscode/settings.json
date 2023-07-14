@@ -1,3 +1,7 @@
 {
-    "dotnet.defaultSolution": "source/source.sln"
+    "dotnet.defaultSolution": "source/source.sln",
+    "cSpell.words": [
+        "Avalonia",
+        "roslynviewer"
+    ]
 }
