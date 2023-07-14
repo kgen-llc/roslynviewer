@@ -102,7 +102,7 @@
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
-      </xsd:complexType>
+      </xsd:complexType> 
     </xsd:element>
   </xsd:schema>
   <resheader name="resmimetype">
@@ -143,6 +143,6 @@
   </data>
   <data name="AboutMenuHeader" xml:space="preserve">
     <value>_About</value>
-    <comment>About menu</comment>
+    <comment/>
   </data>
 </root>
