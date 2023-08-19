@@ -5,7 +5,7 @@ using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 
-public class SyntaxTokenViewModel 
+public class SyntaxTokenViewModel  : ILocationProvider
 {
 
     public SyntaxTokenViewModel(SyntaxToken node)
@@ -14,6 +14,8 @@ public class SyntaxTokenViewModel
     }
 
     public SyntaxToken Node {get;}
+
+    public Microsoft.CodeAnalysis.Location GetLocation() => Node.GetLocation();
 
     public string KindText { get => this.Node.Kind().ToString();}
 

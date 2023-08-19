@@ -5,7 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 
-public class SyntaxNodeViewModel
+public interface ILocationProvider {
+    Microsoft.CodeAnalysis.Location GetLocation();
+}
+
+public class SyntaxNodeViewModel : ILocationProvider
 {
     public SyntaxNodeViewModel(SyntaxNode node)
     {
@@ -13,6 +17,8 @@ public class SyntaxNodeViewModel
     }
 
     public SyntaxNode Node {get;}
+
+    public Microsoft.CodeAnalysis.Location GetLocation() => Node.GetLocation();
 
     public IEnumerable<object> Children {
         get => 
