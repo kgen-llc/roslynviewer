@@ -12,7 +12,7 @@ public SyntaxTriviaViewModel(SyntaxTrivia trivia)
 
     public SyntaxTrivia Node {get;}
 
-    public Microsoft.CodeAnalysis.Location GetLocation() => Node.GetLocation();
+    public Location GetLocation() => Node.GetLocation();
 
     public string KindText { get => this.Node.Kind().ToString();}
 }

@@ -15,7 +15,7 @@ public class SyntaxTokenViewModel  : ILocationProvider
 
     public SyntaxToken Node {get;}
 
-    public Microsoft.CodeAnalysis.Location GetLocation() => Node.GetLocation();
+    public Location GetLocation() => Node.GetLocation();
 
     public string KindText { get => this.Node.Kind().ToString();}
 
@@ -24,8 +24,8 @@ public class SyntaxTokenViewModel  : ILocationProvider
         (this.Node.HasLeadingTrivia 
             ? this.Node.LeadingTrivia.Select(SyntaxNodeViewModel.CreateViewModel)
             : Enumerable.Empty<object>() )
-        .Concat((this.Node.HasTrailingTrivia 
+        .Concat(this.Node.HasTrailingTrivia 
             ? this.Node.TrailingTrivia.Select(SyntaxNodeViewModel.CreateViewModel)
-            : Enumerable.Empty<object>() ));
+            : Enumerable.Empty<object>() );
     }
 }

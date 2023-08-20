@@ -14,7 +14,7 @@ public class SyntaxNodeViewModel : ILocationProvider
 
     public SyntaxNode Node {get;}
 
-    public Microsoft.CodeAnalysis.Location GetLocation() => Node.GetLocation();
+    public Location GetLocation() => Node.GetLocation();
 
     public IEnumerable<object> Children {
         get => 

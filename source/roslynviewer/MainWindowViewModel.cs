@@ -16,7 +16,7 @@ public class MainWindowViewModel  : ObservableObject
 
         this.ApplicationTitle = getTitle();
 
-        string getTitle()
+        static string getTitle()
         {
             var assembly= Assembly.GetEntryAssembly()!;
 
@@ -51,7 +51,7 @@ public class MainWindowViewModel  : ObservableObject
         this.controlledApplicationLifetime.Shutdown(0);
     }
 
-    public void AboutCommand() {
+    public static void AboutCommand() {
         "https://github.com/kgen-llc/roslynviewer".OpenUrl();
     }
 }

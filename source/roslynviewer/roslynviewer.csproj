@@ -21,6 +21,7 @@
     <Copyright>Copyright 2023 KGEN LLC</Copyright>
     <PackageIcon>Assets/icon.png</PackageIcon>
     <ApplicationIcon>Assets/icon.ico</ApplicationIcon>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
  
 	<ItemGroup>
