@@ -5,10 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 
-public interface ILocationProvider {
-    Microsoft.CodeAnalysis.Location GetLocation();
-}
-
 public class SyntaxNodeViewModel : ILocationProvider
 {
     public SyntaxNodeViewModel(SyntaxNode node)
