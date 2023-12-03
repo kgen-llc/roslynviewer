@@ -49,6 +49,8 @@ public partial class MainWindow : Window
                     var location = locationProvider.GetLocation().SourceSpan;
 
                     this.Editor.TextArea.Selection = AvaloniaEdit.Editing.Selection.Create(this.Editor.TextArea, location.Start, location.End);
+                    this.Editor.TextArea.Caret.Offset  = location.Start;
+                    this.Editor.TextArea.Caret.BringCaretToView();
                 }
             };
         }
