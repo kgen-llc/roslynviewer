@@ -4,14 +4,22 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
+using CommunityToolkit.Mvvm.ComponentModel;
 
-public class SyntaxNodeViewModel : ITreeNodeViewModel
+public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
 {
     private IReadOnlyList<ITreeNodeViewModel>? children;
 
     public SyntaxNodeViewModel(SyntaxNode node)
     {
         this.Node = node;
+    }
+
+    private bool _isExpanded = false;
+    public bool IsExpanded
+    {
+        get  => _isExpanded;
+        set  => this.SetProperty(ref this._isExpanded, value);
     }
 
     public SyntaxNode Node {get;}
@@ -45,4 +53,6 @@ public class SyntaxNodeViewModel : ITreeNodeViewModel
         }
         throw new NotImplementedException();
     }
+
+    
 }

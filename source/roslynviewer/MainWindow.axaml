@@ -38,7 +38,13 @@
             Grid.Row="2"
             Grid.Column="0"
             HorizontalScrollBarVisibility="Auto"
-            VerticalScrollBarVisibility="Visible"/>
+            VerticalScrollBarVisibility="Visible">
+            <AvaloniaEdit:TextEditor.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Locate" Command="{Binding LocateInSyntaxTreeCommand}" CommandParameter="{Binding #Editor}" />
+                </ContextMenu>
+            </AvaloniaEdit:TextEditor.ContextMenu>
+        </AvaloniaEdit:TextEditor>
 
         <TextBlock
             Grid.Row="1"
@@ -50,7 +56,13 @@
             x:Name="tree"
             Grid.Row="2"
             Grid.Column="1"
-            ItemsSource="{Binding SyntaxTreeRoot}">
+            ItemsSource="{Binding SyntaxTreeRoot}"
+            SelectedItem="{Binding SelectedItem}">
+            <TreeView.Styles>
+                        <Style Selector="TreeViewItem">
+                            <Setter Property="IsExpanded" Value="{Binding IsExpanded}" />
+                        </Style>
+                    </TreeView.Styles>
             <TreeView.DataTemplates>
                 <TreeDataTemplate DataType="self:SyntaxNodeViewModel" ItemsSource="{Binding Children}">
                     <TextBlock Text="{Binding Node.KindText}" />

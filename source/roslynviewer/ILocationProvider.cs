@@ -8,4 +8,6 @@ public interface ILocationProvider {
 
 public interface ITreeNodeViewModel : ILocationProvider {
     IReadOnlyList<ITreeNodeViewModel> Children {get;}
+
+    bool IsExpanded {get; set;}
 }

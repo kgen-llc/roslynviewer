@@ -6,19 +6,22 @@ using System.Collections.Generic;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Reflection;
+using System.Linq;
+using AvaloniaEdit;
 
-public class MainWindowViewModel  : ObservableObject 
+public class MainWindowViewModel : ObservableObject
 {
-    public MainWindowViewModel(IControlledApplicationLifetime controlledApplicationLifetime) {
+    public MainWindowViewModel(IControlledApplicationLifetime controlledApplicationLifetime)
+    {
         this.controlledApplicationLifetime = controlledApplicationLifetime;
         this.sourceCode = string.Empty;
-        this.syntaxTreeRoot = new List<SyntaxNodeViewModel> ();
+        this.syntaxTreeRoot = new List<SyntaxNodeViewModel>();
 
         this.ApplicationTitle = getTitle();
 
         static string getTitle()
         {
-            var assembly= Assembly.GetEntryAssembly()!;
+            var assembly = Assembly.GetEntryAssembly()!;
 
             return assembly.GetCustomAttribute<AssemblyProductAttribute>()!.Product + " " + assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion.ToString()
                 + " - " + assembly.GetCustomAttribute<AssemblyCopyrightAttribute>()!.Copyright;
@@ -26,32 +29,76 @@ public class MainWindowViewModel  : ObservableObject
     }
     private string sourceCode;
     private IReadOnlyCollection<SyntaxNodeViewModel> syntaxTreeRoot;
+
     private readonly IControlledApplicationLifetime controlledApplicationLifetime;
 
-    public string SourceCode {
+    public string SourceCode
+    {
         get => this.sourceCode;
 
-        set {
-            if(this.SetProperty(ref this.sourceCode, value)) {
-                this.SyntaxTreeRoot = new List<SyntaxNodeViewModel> { 
+        set
+        {
+            if (this.SetProperty(ref this.sourceCode, value))
+            {
+                this.SyntaxTreeRoot = new List<SyntaxNodeViewModel> {
                     new SyntaxNodeViewModel(CSharpSyntaxTree.ParseText(this.sourceCode).GetRoot())
                 };
             }
         }
     }
 
-    public IReadOnlyCollection<SyntaxNodeViewModel> SyntaxTreeRoot {
+    public IReadOnlyCollection<SyntaxNodeViewModel> SyntaxTreeRoot
+    {
         get => this.syntaxTreeRoot;
         set => this.SetProperty(ref this.syntaxTreeRoot, value);
     }
 
-    public string ApplicationTitle { get; } 
+    private ITreeNodeViewModel selectedItem;
 
-    public void ExitCommand() {
+    public ITreeNodeViewModel SelectedItem 
+    {
+        get => this.selectedItem;
+        set => this.SetProperty(ref this.selectedItem, value);
+    }
+
+    public string ApplicationTitle { get; }
+
+    public void ExitCommand()
+    {
         this.controlledApplicationLifetime.Shutdown(0);
     }
 
-    public static void AboutCommand() {
+    public static void AboutCommand()
+    {
         "https://github.com/kgen-llc/roslynviewer".OpenUrl();
+    }
+
+    public void LocateInSyntaxTreeCommand(object textEditor)
+    {
+
+        var offset = ((TextEditor)textEditor).CaretOffset;
+
+        this.SelectedItem = FindNode(SyntaxTreeRoot.First(), offset);
+    }
+
+
+    public static ITreeNodeViewModel FindNode(ITreeNodeViewModel node, int offset)
+    {
+        if (node == null || !node.Children.Any())
+        {
+            return node;
+        }
+        
+        node.IsExpanded = true;
+
+        foreach (var child in node.Children)
+        {
+            if (child.GetLocation().SourceSpan.Contains(offset))
+            {
+                return FindNode(child, offset);
+            }
+        }
+
+        return node;
     }
 }

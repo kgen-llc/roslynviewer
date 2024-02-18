@@ -5,13 +5,22 @@ using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 
-public class SyntaxTokenViewModel  : ITreeNodeViewModel
+using CommunityToolkit.Mvvm.ComponentModel;
+
+public class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
 {
     private IReadOnlyList<ITreeNodeViewModel>? children;
 
     public SyntaxTokenViewModel(SyntaxToken node)
     {
         this.Node = node;
+    }
+
+    private bool _isExpanded = false;
+    public bool IsExpanded
+    {
+        get  => _isExpanded;
+        set  => this.SetProperty(ref this._isExpanded, value);
     }
 
     public SyntaxToken Node {get;}
