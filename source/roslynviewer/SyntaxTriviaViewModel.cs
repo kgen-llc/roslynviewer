@@ -14,7 +14,7 @@ public class SyntaxTriviaViewModel  : ObservableObject, ITreeNodeViewModel
         this.Node = trivia;
     }
 
-    private bool _isExpanded = false;
+    private bool _isExpanded;
     public bool IsExpanded
     {
         get  => _isExpanded;

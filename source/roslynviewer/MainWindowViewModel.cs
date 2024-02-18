@@ -53,9 +53,9 @@ public class MainWindowViewModel : ObservableObject
         set => this.SetProperty(ref this.syntaxTreeRoot, value);
     }
 
-    private ITreeNodeViewModel selectedItem;
+    private ITreeNodeViewModel? selectedItem;
 
-    public ITreeNodeViewModel SelectedItem 
+    public ITreeNodeViewModel? SelectedItem 
     {
         get => this.selectedItem;
         set => this.SetProperty(ref this.selectedItem, value);
@@ -75,14 +75,15 @@ public class MainWindowViewModel : ObservableObject
 
     public void LocateInSyntaxTreeCommand(object textEditor)
     {
+        if(textEditor != null)  {
+            var offset = ((TextEditor)textEditor).CaretOffset;
 
-        var offset = ((TextEditor)textEditor).CaretOffset;
-
-        this.SelectedItem = FindNode(SyntaxTreeRoot.First(), offset);
+            this.SelectedItem = FindNode(SyntaxTreeRoot.First(), offset);
+        }
     }
 
 
-    public static ITreeNodeViewModel FindNode(ITreeNodeViewModel node, int offset)
+    public static ITreeNodeViewModel? FindNode(ITreeNodeViewModel node, int offset)
     {
         if (node == null || !node.Children.Any())
         {

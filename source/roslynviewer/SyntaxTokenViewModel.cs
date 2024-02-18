@@ -16,7 +16,7 @@ public class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
         this.Node = node;
     }
 
-    private bool _isExpanded = false;
+    private bool _isExpanded;
     public bool IsExpanded
     {
         get  => _isExpanded;
