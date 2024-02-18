@@ -5,8 +5,9 @@ using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 
-public class SyntaxTokenViewModel  : ILocationProvider
+public class SyntaxTokenViewModel  : ITreeNodeViewModel
 {
+    private IReadOnlyList<ITreeNodeViewModel>? children;
 
     public SyntaxTokenViewModel(SyntaxToken node)
     {
@@ -19,13 +20,15 @@ public class SyntaxTokenViewModel  : ILocationProvider
 
     public string KindText { get => this.Node.Kind().ToString();}
 
-    public IEnumerable<object> Children {
+    public IReadOnlyList<ITreeNodeViewModel> Children => this.children ??= new List<ITreeNodeViewModel>(InternalChildren);
+    
+    private IEnumerable<ITreeNodeViewModel> InternalChildren {
         get => 
         (this.Node.HasLeadingTrivia 
             ? this.Node.LeadingTrivia.Select(SyntaxNodeViewModel.CreateViewModel)
-            : Enumerable.Empty<object>() )
+            : Enumerable.Empty<ITreeNodeViewModel>() )
         .Concat(this.Node.HasTrailingTrivia 
             ? this.Node.TrailingTrivia.Select(SyntaxNodeViewModel.CreateViewModel)
-            : Enumerable.Empty<object>() );
+            : Enumerable.Empty<ITreeNodeViewModel>() );
     }
 }
