@@ -1,310 +1,375 @@
 ﻿{
+  IsExpanded: false,
   Node: {Scrubbed},
   Children: [
     {
+      IsExpanded: false,
       Node: {Scrubbed},
       KindText: SingleLineCommentTrivia
     },
     {
+      IsExpanded: false,
       Node: {Scrubbed},
       KindText: EndOfLineTrivia
     },
     {
+      IsExpanded: false,
       Node: {Scrubbed},
       Children: [
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           KindText: SingleLineCommentTrivia
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           KindText: EndOfLineTrivia
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           KindText: NamespaceKeyword,
           Children: [
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: SingleLineCommentTrivia
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: EndOfLineTrivia
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: WhitespaceTrivia
             }
           ]
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           Children: [
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: IdentifierToken,
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: EndOfLineTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: EndOfLineTrivia
             }
           ]
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           KindText: OpenBraceToken,
           Children: [
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: EndOfLineTrivia
             }
           ]
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
           Children: [
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: WhitespaceTrivia
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: ClassKeyword,
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: IdentifierToken,
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: OpenBraceToken,
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: EndOfLineTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: StaticKeyword,
                   Children: [
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: WhitespaceTrivia
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: WhitespaceTrivia
                     }
                   ]
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   Children: [
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: VoidKeyword,
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: WhitespaceTrivia
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: WhitespaceTrivia
                     }
                   ]
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
-                  KindText: IdentifierToken,
-                  Children: []
+                  KindText: IdentifierToken
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   Children: [
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
-                      KindText: OpenParenToken,
-                      Children: []
+                      KindText: OpenParenToken
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           Children: [
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               Children: [
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: StringKeyword,
-                                  Children: []
+                                  KindText: StringKeyword
                                 }
                               ]
                             },
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               Children: [
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: OpenBracketToken,
-                                  Children: []
+                                  KindText: OpenBracketToken
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   Children: [
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: OmittedArraySizeExpressionToken,
-                                      Children: []
+                                      KindText: OmittedArraySizeExpressionToken
                                     }
                                   ]
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   KindText: CloseBracketToken,
                                   Children: [
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
                                       KindText: WhitespaceTrivia
                                     }
                                   ]
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   KindText: WhitespaceTrivia
                                 }
                               ]
                             },
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               KindText: WhitespaceTrivia
                             }
                           ]
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
-                          KindText: IdentifierToken,
-                          Children: []
+                          KindText: IdentifierToken
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: CloseParenToken,
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: EndOfLineTrivia
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: EndOfLineTrivia
                     }
                   ]
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   Children: [
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: WhitespaceTrivia
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: OpenBraceToken,
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: WhitespaceTrivia
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: EndOfLineTrivia
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: WhitespaceTrivia
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           Children: [
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               KindText: WhitespaceTrivia
                             },
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               Children: [
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   KindText: WhitespaceTrivia
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   Children: [
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
                                       KindText: WhitespaceTrivia
                                     },
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
                                       Children: [
                                         {
+                                          IsExpanded: false,
                                           Node: {Scrubbed},
                                           KindText: WhitespaceTrivia
                                         },
                                         {
+                                          IsExpanded: false,
                                           Node: {Scrubbed},
                                           KindText: IdentifierToken,
                                           Children: [
                                             {
+                                              IsExpanded: false,
                                               Node: {Scrubbed},
                                               KindText: WhitespaceTrivia
                                             }
@@ -313,144 +378,161 @@
                                       ]
                                     },
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: DotToken,
-                                      Children: []
+                                      KindText: DotToken
                                     },
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
                                       Children: [
                                         {
+                                          IsExpanded: false,
                                           Node: {Scrubbed},
-                                          KindText: IdentifierToken,
-                                          Children: []
+                                          KindText: IdentifierToken
                                         }
                                       ]
                                     }
                                   ]
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: DotToken,
-                                  Children: []
+                                  KindText: DotToken
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   Children: [
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: IdentifierToken,
-                                      Children: []
+                                      KindText: IdentifierToken
                                     }
                                   ]
                                 }
                               ]
                             },
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               Children: [
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: OpenParenToken,
-                                  Children: []
+                                  KindText: OpenParenToken
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
                                   Children: [
                                     {
+                                      IsExpanded: false,
                                       Node: {Scrubbed},
                                       Children: [
                                         {
+                                          IsExpanded: false,
                                           Node: {Scrubbed},
-                                          KindText: StringLiteralToken,
-                                          Children: []
+                                          KindText: StringLiteralToken
                                         }
                                       ]
                                     }
                                   ]
                                 },
                                 {
+                                  IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: CloseParenToken,
-                                  Children: []
+                                  KindText: CloseParenToken
                                 }
                               ]
                             }
                           ]
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: SemicolonToken,
                           Children: [
                             {
+                              IsExpanded: false,
                               Node: {Scrubbed},
                               KindText: EndOfLineTrivia
                             }
                           ]
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: EndOfLineTrivia
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: CloseBraceToken,
                       Children: [
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: WhitespaceTrivia
                         },
                         {
+                          IsExpanded: false,
                           Node: {Scrubbed},
                           KindText: EndOfLineTrivia
                         }
                       ]
                     },
                     {
+                      IsExpanded: false,
                       Node: {Scrubbed},
                       KindText: EndOfLineTrivia
                     }
                   ]
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: EndOfLineTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: CloseBraceToken,
               Children: [
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: WhitespaceTrivia
                 },
                 {
+                  IsExpanded: false,
                   Node: {Scrubbed},
                   KindText: EndOfLineTrivia
                 }
               ]
             },
             {
+              IsExpanded: false,
               Node: {Scrubbed},
               KindText: EndOfLineTrivia
             }
           ]
         },
         {
+          IsExpanded: false,
           Node: {Scrubbed},
-          KindText: CloseBraceToken,
-          Children: []
+          KindText: CloseBraceToken
         }
       ]
     },
     {
+      IsExpanded: false,
       Node: {Scrubbed},
-      KindText: EndOfFileToken,
-      Children: []
+      KindText: EndOfFileToken
     }
   ]
 }
