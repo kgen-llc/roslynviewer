@@ -65,16 +65,16 @@
                     </TreeView.Styles>
             <TreeView.DataTemplates>
                 <TreeDataTemplate DataType="self:SyntaxNodeViewModel" ItemsSource="{Binding Children}">
-                    <TextBlock Text="{Binding Node.KindText}" />
+                    <TextBlock Text="{Binding Node.KindText}"  Classes="SyntaxNode" />
                 </TreeDataTemplate>
 
                 <TreeDataTemplate DataType="self:SyntaxTokenViewModel" ItemsSource="{Binding Children}">
-                    <TextBlock Text="{Binding KindText}" />
+                    <TextBlock Text="{Binding KindText}" Classes="SyntaxToken" />
                 </TreeDataTemplate>
 
                 <DataTemplate DataType="self:SyntaxTriviaViewModel">
                     <StackPanel>
-                        <TextBlock Text="{Binding KindText}" />
+                        <TextBlock Text="{Binding KindText}" Classes="SyntaxTrivia" />
                     </StackPanel>
                 </DataTemplate>
             </TreeView.DataTemplates>
