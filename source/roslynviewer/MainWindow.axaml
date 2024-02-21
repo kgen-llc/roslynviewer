@@ -1,107 +1,118 @@
 <Window
-     x:Class="roslynviewer.MainWindow"
-     xmlns="https://github.com/avaloniaui"
-     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-     xmlns:AvaloniaEdit="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
-     xmlns:self="clr-namespace:roslynviewer"
-     Title="{Binding ApplicationTitle}"
-     d:DesignHeight="450"
-     d:DesignWidth="800"
-     Icon="Assets/icon.png"
-     mc:Ignorable="d">
-    <Window.Resources>
-        <self:ToFullStringConverter
-             x:Key="toFullStringConverter"/>
-    </Window.Resources>
-    <Grid
-         ColumnDefinitions="*,*"
-         RowDefinitions="Auto,Auto,*,100">
-        <Menu
-             Grid.Row="0">
-            <MenuItem
-                 Header="{x:Static self:ApplicationResource.FileMenuHeader}">
-                <MenuItem
-                     Command="{Binding ExitCommand}"
-                     Header="{x:Static self:ApplicationResource.ExitMenuHeader}"/>
-            </MenuItem>
-            <MenuItem
-                 Command="{Binding AboutCommand}"
-                 Header="{x:Static self:ApplicationResource.AboutMenuHeader}"/>
-        </Menu>
-        <TextBlock
-             Grid.Row="1"
-             Grid.Column="0"
-             Margin="5"
-             Text="{x:Static self:ApplicationResource.SourceCodeHeader}"/>
-        <AvaloniaEdit:TextEditor
-             x:Name="Editor"
-             FontFamily="Cascadia Code,Consolas,Menlo,Monospace"
-             FontWeight="Light"
-             FontSize="14"
-             BorderThickness="5"
-             Grid.Row="2"
-             Grid.Column="0"
-             HorizontalScrollBarVisibility="Auto"
-             VerticalScrollBarVisibility="Visible">
-            <AvaloniaEdit:TextEditor.ContextMenu>
-                <ContextMenu>
+      x:Class="roslynviewer.MainWindow"
+      xmlns="https://github.com/avaloniaui"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:AvaloniaEdit="clr-namespace:AvaloniaEdit;assembly=AvaloniaEdit"
+      xmlns:self="clr-namespace:roslynviewer"
+      Title="{Binding ApplicationTitle}"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Icon="Assets/icon.png"
+      mc:Ignorable="d">
+     <Window.Resources>
+          <self:ToFullStringConverter
+                x:Key="toFullStringConverter"/>
+     </Window.Resources>
+     <Grid
+           ColumnDefinitions="*,*"
+           RowDefinitions="Auto,Auto,*,100">
+          <Menu
+                Grid.Row="0">
+               <MenuItem
+                     Header="{x:Static self:ApplicationResource.FileMenuHeader}">
                     <MenuItem
-                         Header="Locate"
-                         Command="{Binding LocateInSyntaxTreeCommand}"
-                         CommandParameter="{Binding #Editor}"/>
-                </ContextMenu>
-            </AvaloniaEdit:TextEditor.ContextMenu>
-        </AvaloniaEdit:TextEditor>
-        <TextBlock
-             Grid.Row="1"
-             Grid.Column="1"
-             Margin="5"
-             Text="{x:Static self:ApplicationResource.RoslynTreeHeader}"/>
-        <TreeView
-             x:Name="tree"
-             Grid.Row="2"
-             Grid.Column="1"
-             ItemsSource="{Binding SyntaxTreeRoot}"
-             SelectedItem="{Binding SelectedItem}">
-            <TreeView.Styles>
-                <Style
-                     Selector="TreeViewItem">
-                    <Setter
-                         Property="IsExpanded"
-                         Value="{Binding IsExpanded}"/>
-                </Style>
-            </TreeView.Styles>
-            <TreeView.DataTemplates>
-                <TreeDataTemplate
-                     DataType="self:SyntaxNodeViewModel"
-                     ItemsSource="{Binding Children}">
-                    <TextBlock
-                         Text="{Binding Node.KindText}"
-                         Classes="SyntaxNode"/>
-                </TreeDataTemplate>
-                <TreeDataTemplate
-                     DataType="self:SyntaxTokenViewModel"
-                     ItemsSource="{Binding Children}">
-                    <TextBlock
-                         Text="{Binding KindText}"
-                         Classes="SyntaxToken"/>
-                </TreeDataTemplate>
-                <DataTemplate
-                     DataType="self:SyntaxTriviaViewModel">
-                    <StackPanel>
-                        <TextBlock
-                             Text="{Binding KindText}"
-                             Classes="SyntaxTrivia"/>
-                    </StackPanel>
-                </DataTemplate>
-            </TreeView.DataTemplates>
-        </TreeView>
-        <TextBlock
-             Grid.Row="3"
-             Grid.ColumnSpan="2"
-             Padding="3"
-             Text="{Binding #tree.SelectedItem.Node, Converter={StaticResource toFullStringConverter}, FallbackValue={x:Static self:ApplicationResource.NodeDisplayWatermark}}"/>
-    </Grid>
+                          Command="{Binding ExitCommand}"
+                          Header="{x:Static self:ApplicationResource.ExitMenuHeader}"/>
+               </MenuItem>
+               <MenuItem
+                     Command="{Binding AboutCommand}"
+                     Header="{x:Static self:ApplicationResource.AboutMenuHeader}"/>
+          </Menu>
+          <TextBlock
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="5"
+                Text="{x:Static self:ApplicationResource.SourceCodeHeader}"/>
+          <AvaloniaEdit:TextEditor
+                x:Name="Editor"
+                FontFamily="Cascadia Code,Consolas,Menlo,Monospace"
+                FontWeight="Light"
+                FontSize="14"
+                BorderThickness="5"
+                Grid.Row="2"
+                Grid.Column="0"
+                HorizontalScrollBarVisibility="Auto"
+                VerticalScrollBarVisibility="Visible">
+               <AvaloniaEdit:TextEditor.ContextMenu>
+                    <ContextMenu>
+                         <MenuItem
+                               Header="Locate"
+                               Command="{Binding LocateInSyntaxTreeCommand}"
+                               CommandParameter="{Binding #Editor}"/>
+                    </ContextMenu>
+               </AvaloniaEdit:TextEditor.ContextMenu>
+          </AvaloniaEdit:TextEditor>
+          <TextBlock
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="5"
+                Text="{x:Static self:ApplicationResource.RoslynTreeHeader}"/>
+          <TreeView
+                x:Name="tree"
+                Grid.Row="2"
+                Grid.Column="1"
+                ItemsSource="{Binding SyntaxTreeRoot}"
+                SelectedItem="{Binding SelectedItem}">
+               <TreeView.Styles>
+                    <Style
+                          Selector="TreeViewItem">
+                         <Setter
+                               Property="IsExpanded"
+                               Value="{Binding IsExpanded}"/>
+                    </Style>
+               </TreeView.Styles>
+               <TreeView.DataTemplates>
+                    <TreeDataTemplate
+                          DataType="self:SyntaxNodeViewModel"
+                          ItemsSource="{Binding Children}">
+                         <TextBlock
+                               Text="{Binding KindText}"
+                               Classes="SyntaxNode"/>
+                    </TreeDataTemplate>
+                    <TreeDataTemplate
+                          DataType="self:SyntaxTokenViewModel"
+                          ItemsSource="{Binding Children}">
+                         <TextBlock
+                               Text="{Binding KindText}"
+                               Classes="SyntaxToken"/>
+                    </TreeDataTemplate>
+                    <DataTemplate
+                          DataType="self:SyntaxTriviaViewModel">
+                         <StackPanel>
+                              <TextBlock
+                                    Text="{Binding KindText}"
+                                    Classes="SyntaxTrivia"/>
+                         </StackPanel>
+                    </DataTemplate>
+               </TreeView.DataTemplates>
+          </TreeView>
+          <TextBlock
+                Grid.Row="3"
+                Grid.ColumnSpan="2"
+                Padding="3"
+                Text="{Binding #tree.SelectedItem.Node, Converter={StaticResource toFullStringConverter}, FallbackValue={x:Static self:ApplicationResource.NodeDisplayWatermark}}"/>
+          <DataGrid
+                Grid.Row="3"
+                Grid.Column="3"
+                ItemsSource="{Binding #tree.SelectedItem.Properties}"
+                IsReadOnly="True">
+                
+                <DataGrid.Columns>
+<DataGridTextColumn Width="*" Header="Name" Binding="{Binding Name}" />
+<DataGridTextColumn Width="*" Header="Value" Binding="{Binding Value}" />
+                </DataGrid.Columns>
+                </DataGrid>
+     </Grid>
 </Window>

@@ -31,6 +31,11 @@ public class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
 
     public IReadOnlyList<ITreeNodeViewModel> Children => this.children ??= new List<ITreeNodeViewModel>(InternalChildren);
     
+    public IReadOnlyList<PropertyInfo> Properties => [
+        new PropertyInfo("Type", "Token"),
+        new PropertyInfo("Kind", KindText),
+    ];
+
     private IEnumerable<ITreeNodeViewModel> InternalChildren {
         get => 
         (this.Node.HasLeadingTrivia 

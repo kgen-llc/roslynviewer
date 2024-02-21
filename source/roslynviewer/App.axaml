@@ -6,6 +6,8 @@
     <Application.Styles>
         <FluentTheme/>
         <StyleInclude Source="avares://AvaloniaEdit/Themes/Fluent/AvaloniaEdit.xaml" />
+        <StyleInclude Source="avares://Avalonia.Controls.DataGrid/Themes/Fluent.xaml"/>
+        
         <Style Selector="TextBlock.SyntaxNode">
             <Setter Property="Foreground" Value="Blue"/>
         </Style>

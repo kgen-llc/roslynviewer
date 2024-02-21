@@ -1,29 +1,71 @@
 ﻿{
   IsExpanded: false,
   Node: {Scrubbed},
+  KindText: CompilationUnit,
   Children: [
     {
       IsExpanded: false,
       Node: {Scrubbed},
+      Properties: [
+        {
+          Name: Type,
+          Value: Trivia
+        },
+        {
+          Name: Kind,
+          Value: SingleLineCommentTrivia
+        }
+      ],
       KindText: SingleLineCommentTrivia
     },
     {
       IsExpanded: false,
       Node: {Scrubbed},
+      Properties: [
+        {
+          Name: Type,
+          Value: Trivia
+        },
+        {
+          Name: Kind,
+          Value: EndOfLineTrivia
+        }
+      ],
       KindText: EndOfLineTrivia
     },
     {
       IsExpanded: false,
       Node: {Scrubbed},
+      KindText: NamespaceDeclaration,
       Children: [
         {
           IsExpanded: false,
           Node: {Scrubbed},
+          Properties: [
+            {
+              Name: Type,
+              Value: Trivia
+            },
+            {
+              Name: Kind,
+              Value: SingleLineCommentTrivia
+            }
+          ],
           KindText: SingleLineCommentTrivia
         },
         {
           IsExpanded: false,
           Node: {Scrubbed},
+          Properties: [
+            {
+              Name: Type,
+              Value: Trivia
+            },
+            {
+              Name: Kind,
+              Value: EndOfLineTrivia
+            }
+          ],
           KindText: EndOfLineTrivia
         },
         {
@@ -34,23 +76,64 @@
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: SingleLineCommentTrivia
+                }
+              ],
               KindText: SingleLineCommentTrivia
             },
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: EndOfLineTrivia
+                }
+              ],
               KindText: EndOfLineTrivia
             },
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: WhitespaceTrivia
+                }
+              ],
               KindText: WhitespaceTrivia
+            }
+          ],
+          Properties: [
+            {
+              Name: Type,
+              Value: Token
+            },
+            {
+              Name: Kind,
+              Value: NamespaceKeyword
             }
           ]
         },
         {
           IsExpanded: false,
           Node: {Scrubbed},
+          KindText: IdentifierName,
           Children: [
             {
               IsExpanded: false,
@@ -60,14 +143,54 @@
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: EndOfLineTrivia
+                    }
+                  ],
                   KindText: EndOfLineTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Token
+                },
+                {
+                  Name: Kind,
+                  Value: IdentifierToken
                 }
               ]
             },
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: EndOfLineTrivia
+                }
+              ],
               KindText: EndOfLineTrivia
+            }
+          ],
+          Properties: [
+            {
+              Name: Type,
+              Value: Node
+            },
+            {
+              Name: Kind,
+              Value: IdentifierName
             }
           ]
         },
@@ -79,17 +202,48 @@
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: EndOfLineTrivia
+                }
+              ],
               KindText: EndOfLineTrivia
+            }
+          ],
+          Properties: [
+            {
+              Name: Type,
+              Value: Token
+            },
+            {
+              Name: Kind,
+              Value: OpenBraceToken
             }
           ]
         },
         {
           IsExpanded: false,
           Node: {Scrubbed},
+          KindText: ClassDeclaration,
           Children: [
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: WhitespaceTrivia
+                }
+              ],
               KindText: WhitespaceTrivia
             },
             {
@@ -100,12 +254,42 @@
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Token
+                },
+                {
+                  Name: Kind,
+                  Value: ClassKeyword
                 }
               ]
             },
@@ -117,7 +301,27 @@
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Token
+                },
+                {
+                  Name: Kind,
+                  Value: IdentifierToken
                 }
               ]
             },
@@ -129,22 +333,63 @@
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: EndOfLineTrivia
+                    }
+                  ],
                   KindText: EndOfLineTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Token
+                },
+                {
+                  Name: Kind,
+                  Value: OpenBraceToken
                 }
               ]
             },
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              KindText: MethodDeclaration,
               Children: [
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
                 },
                 {
@@ -155,18 +400,49 @@
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: WhitespaceTrivia
+                        }
+                      ],
                       KindText: WhitespaceTrivia
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: WhitespaceTrivia
+                        }
+                      ],
                       KindText: WhitespaceTrivia
+                    }
+                  ],
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Token
+                    },
+                    {
+                      Name: Kind,
+                      Value: StaticKeyword
                     }
                   ]
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  KindText: PredefinedType,
                   Children: [
                     {
                       IsExpanded: false,
@@ -176,67 +452,183 @@
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: WhitespaceTrivia
+                            }
+                          ],
                           KindText: WhitespaceTrivia
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Token
+                        },
+                        {
+                          Name: Kind,
+                          Value: VoidKeyword
                         }
                       ]
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: WhitespaceTrivia
+                        }
+                      ],
                       KindText: WhitespaceTrivia
+                    }
+                  ],
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Node
+                    },
+                    {
+                      Name: Kind,
+                      Value: PredefinedType
                     }
                   ]
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
-                  KindText: IdentifierToken
+                  KindText: IdentifierToken,
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Token
+                    },
+                    {
+                      Name: Kind,
+                      Value: IdentifierToken
+                    }
+                  ]
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  KindText: ParameterList,
                   Children: [
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
-                      KindText: OpenParenToken
+                      KindText: OpenParenToken,
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Token
+                        },
+                        {
+                          Name: Kind,
+                          Value: OpenParenToken
+                        }
+                      ]
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      KindText: Parameter,
                       Children: [
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          KindText: ArrayType,
                           Children: [
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              KindText: PredefinedType,
                               Children: [
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: StringKeyword
+                                  KindText: StringKeyword,
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: StringKeyword
+                                    }
+                                  ]
+                                }
+                              ],
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Node
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: PredefinedType
                                 }
                               ]
                             },
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              KindText: ArrayRankSpecifier,
                               Children: [
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: OpenBracketToken
+                                  KindText: OpenBracketToken,
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: OpenBracketToken
+                                    }
+                                  ]
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
+                                  KindText: OmittedArraySizeExpression,
                                   Children: [
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: OmittedArraySizeExpressionToken
+                                      KindText: OmittedArraySizeExpressionToken,
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Token
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: OmittedArraySizeExpressionToken
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Node
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: OmittedArraySizeExpression
                                     }
                                   ]
                                 },
@@ -248,28 +640,108 @@
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Trivia
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: WhitespaceTrivia
+                                        }
+                                      ],
                                       KindText: WhitespaceTrivia
+                                    }
+                                  ],
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: CloseBracketToken
                                     }
                                   ]
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Trivia
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: WhitespaceTrivia
+                                    }
+                                  ],
                                   KindText: WhitespaceTrivia
+                                }
+                              ],
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Node
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: ArrayRankSpecifier
                                 }
                               ]
                             },
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Trivia
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: WhitespaceTrivia
+                                }
+                              ],
                               KindText: WhitespaceTrivia
+                            }
+                          ],
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Node
+                            },
+                            {
+                              Name: Kind,
+                              Value: ArrayType
                             }
                           ]
                         },
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
-                          KindText: IdentifierToken
+                          KindText: IdentifierToken,
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Token
+                            },
+                            {
+                              Name: Kind,
+                              Value: IdentifierToken
+                            }
+                          ]
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Node
+                        },
+                        {
+                          Name: Kind,
+                          Value: Parameter
                         }
                       ]
                     },
@@ -281,24 +753,75 @@
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: EndOfLineTrivia
+                            }
+                          ],
                           KindText: EndOfLineTrivia
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Token
+                        },
+                        {
+                          Name: Kind,
+                          Value: CloseParenToken
                         }
                       ]
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: EndOfLineTrivia
+                        }
+                      ],
                       KindText: EndOfLineTrivia
+                    }
+                  ],
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Node
+                    },
+                    {
+                      Name: Kind,
+                      Value: ParameterList
                     }
                   ]
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  KindText: Block,
                   Children: [
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: WhitespaceTrivia
+                        }
+                      ],
                       KindText: WhitespaceTrivia
                     },
                     {
@@ -309,58 +832,143 @@
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: WhitespaceTrivia
+                            }
+                          ],
                           KindText: WhitespaceTrivia
                         },
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: EndOfLineTrivia
+                            }
+                          ],
                           KindText: EndOfLineTrivia
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Token
+                        },
+                        {
+                          Name: Kind,
+                          Value: OpenBraceToken
                         }
                       ]
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      KindText: ExpressionStatement,
                       Children: [
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: WhitespaceTrivia
+                            }
+                          ],
                           KindText: WhitespaceTrivia
                         },
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          KindText: InvocationExpression,
                           Children: [
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Trivia
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: WhitespaceTrivia
+                                }
+                              ],
                               KindText: WhitespaceTrivia
                             },
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              KindText: SimpleMemberAccessExpression,
                               Children: [
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Trivia
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: WhitespaceTrivia
+                                    }
+                                  ],
                                   KindText: WhitespaceTrivia
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
+                                  KindText: SimpleMemberAccessExpression,
                                   Children: [
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Trivia
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: WhitespaceTrivia
+                                        }
+                                      ],
                                       KindText: WhitespaceTrivia
                                     },
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
+                                      KindText: IdentifierName,
                                       Children: [
                                         {
                                           IsExpanded: false,
                                           Node: {Scrubbed},
+                                          Properties: [
+                                            {
+                                              Name: Type,
+                                              Value: Trivia
+                                            },
+                                            {
+                                              Name: Kind,
+                                              Value: WhitespaceTrivia
+                                            }
+                                          ],
                                           KindText: WhitespaceTrivia
                                         },
                                         {
@@ -371,80 +979,265 @@
                                             {
                                               IsExpanded: false,
                                               Node: {Scrubbed},
+                                              Properties: [
+                                                {
+                                                  Name: Type,
+                                                  Value: Trivia
+                                                },
+                                                {
+                                                  Name: Kind,
+                                                  Value: WhitespaceTrivia
+                                                }
+                                              ],
                                               KindText: WhitespaceTrivia
                                             }
+                                          ],
+                                          Properties: [
+                                            {
+                                              Name: Type,
+                                              Value: Token
+                                            },
+                                            {
+                                              Name: Kind,
+                                              Value: IdentifierToken
+                                            }
                                           ]
+                                        }
+                                      ],
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Node
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: IdentifierName
                                         }
                                       ]
                                     },
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: DotToken
+                                      KindText: DotToken,
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Token
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: DotToken
+                                        }
+                                      ]
                                     },
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
+                                      KindText: IdentifierName,
                                       Children: [
                                         {
                                           IsExpanded: false,
                                           Node: {Scrubbed},
-                                          KindText: IdentifierToken
+                                          KindText: IdentifierToken,
+                                          Properties: [
+                                            {
+                                              Name: Type,
+                                              Value: Token
+                                            },
+                                            {
+                                              Name: Kind,
+                                              Value: IdentifierToken
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Node
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: IdentifierName
                                         }
                                       ]
+                                    }
+                                  ],
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Node
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: SimpleMemberAccessExpression
                                     }
                                   ]
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: DotToken
+                                  KindText: DotToken,
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: DotToken
+                                    }
+                                  ]
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
+                                  KindText: IdentifierName,
                                   Children: [
                                     {
                                       IsExpanded: false,
                                       Node: {Scrubbed},
-                                      KindText: IdentifierToken
+                                      KindText: IdentifierToken,
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Token
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: IdentifierToken
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Node
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: IdentifierName
                                     }
                                   ]
+                                }
+                              ],
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Node
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: SimpleMemberAccessExpression
                                 }
                               ]
                             },
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              KindText: ArgumentList,
                               Children: [
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: OpenParenToken
-                                },
-                                {
-                                  IsExpanded: false,
-                                  Node: {Scrubbed},
-                                  Children: [
+                                  KindText: OpenParenToken,
+                                  Properties: [
                                     {
-                                      IsExpanded: false,
-                                      Node: {Scrubbed},
-                                      Children: [
-                                        {
-                                          IsExpanded: false,
-                                          Node: {Scrubbed},
-                                          KindText: StringLiteralToken
-                                        }
-                                      ]
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: OpenParenToken
                                     }
                                   ]
                                 },
                                 {
                                   IsExpanded: false,
                                   Node: {Scrubbed},
-                                  KindText: CloseParenToken
+                                  KindText: Argument,
+                                  Children: [
+                                    {
+                                      IsExpanded: false,
+                                      Node: {Scrubbed},
+                                      KindText: StringLiteralExpression,
+                                      Children: [
+                                        {
+                                          IsExpanded: false,
+                                          Node: {Scrubbed},
+                                          KindText: StringLiteralToken,
+                                          Properties: [
+                                            {
+                                              Name: Type,
+                                              Value: Token
+                                            },
+                                            {
+                                              Name: Kind,
+                                              Value: StringLiteralToken
+                                            }
+                                          ]
+                                        }
+                                      ],
+                                      Properties: [
+                                        {
+                                          Name: Type,
+                                          Value: Node
+                                        },
+                                        {
+                                          Name: Kind,
+                                          Value: StringLiteralExpression
+                                        }
+                                      ]
+                                    }
+                                  ],
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Node
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: Argument
+                                    }
+                                  ]
+                                },
+                                {
+                                  IsExpanded: false,
+                                  Node: {Scrubbed},
+                                  KindText: CloseParenToken,
+                                  Properties: [
+                                    {
+                                      Name: Type,
+                                      Value: Token
+                                    },
+                                    {
+                                      Name: Kind,
+                                      Value: CloseParenToken
+                                    }
+                                  ]
+                                }
+                              ],
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Node
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: ArgumentList
                                 }
                               ]
+                            }
+                          ],
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Node
+                            },
+                            {
+                              Name: Kind,
+                              Value: InvocationExpression
                             }
                           ]
                         },
@@ -456,14 +1249,54 @@
                             {
                               IsExpanded: false,
                               Node: {Scrubbed},
+                              Properties: [
+                                {
+                                  Name: Type,
+                                  Value: Trivia
+                                },
+                                {
+                                  Name: Kind,
+                                  Value: EndOfLineTrivia
+                                }
+                              ],
                               KindText: EndOfLineTrivia
+                            }
+                          ],
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Token
+                            },
+                            {
+                              Name: Kind,
+                              Value: SemicolonToken
                             }
                           ]
                         },
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: EndOfLineTrivia
+                            }
+                          ],
                           KindText: EndOfLineTrivia
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Node
+                        },
+                        {
+                          Name: Kind,
+                          Value: ExpressionStatement
                         }
                       ]
                     },
@@ -475,26 +1308,96 @@
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: WhitespaceTrivia
+                            }
+                          ],
                           KindText: WhitespaceTrivia
                         },
                         {
                           IsExpanded: false,
                           Node: {Scrubbed},
+                          Properties: [
+                            {
+                              Name: Type,
+                              Value: Trivia
+                            },
+                            {
+                              Name: Kind,
+                              Value: EndOfLineTrivia
+                            }
+                          ],
                           KindText: EndOfLineTrivia
+                        }
+                      ],
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Token
+                        },
+                        {
+                          Name: Kind,
+                          Value: CloseBraceToken
                         }
                       ]
                     },
                     {
                       IsExpanded: false,
                       Node: {Scrubbed},
+                      Properties: [
+                        {
+                          Name: Type,
+                          Value: Trivia
+                        },
+                        {
+                          Name: Kind,
+                          Value: EndOfLineTrivia
+                        }
+                      ],
                       KindText: EndOfLineTrivia
+                    }
+                  ],
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Node
+                    },
+                    {
+                      Name: Kind,
+                      Value: Block
                     }
                   ]
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: EndOfLineTrivia
+                    }
+                  ],
                   KindText: EndOfLineTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Node
+                },
+                {
+                  Name: Kind,
+                  Value: MethodDeclaration
                 }
               ]
             },
@@ -506,33 +1409,123 @@
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: WhitespaceTrivia
+                    }
+                  ],
                   KindText: WhitespaceTrivia
                 },
                 {
                   IsExpanded: false,
                   Node: {Scrubbed},
+                  Properties: [
+                    {
+                      Name: Type,
+                      Value: Trivia
+                    },
+                    {
+                      Name: Kind,
+                      Value: EndOfLineTrivia
+                    }
+                  ],
                   KindText: EndOfLineTrivia
+                }
+              ],
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Token
+                },
+                {
+                  Name: Kind,
+                  Value: CloseBraceToken
                 }
               ]
             },
             {
               IsExpanded: false,
               Node: {Scrubbed},
+              Properties: [
+                {
+                  Name: Type,
+                  Value: Trivia
+                },
+                {
+                  Name: Kind,
+                  Value: EndOfLineTrivia
+                }
+              ],
               KindText: EndOfLineTrivia
+            }
+          ],
+          Properties: [
+            {
+              Name: Type,
+              Value: Node
+            },
+            {
+              Name: Kind,
+              Value: ClassDeclaration
             }
           ]
         },
         {
           IsExpanded: false,
           Node: {Scrubbed},
-          KindText: CloseBraceToken
+          KindText: CloseBraceToken,
+          Properties: [
+            {
+              Name: Type,
+              Value: Token
+            },
+            {
+              Name: Kind,
+              Value: CloseBraceToken
+            }
+          ]
+        }
+      ],
+      Properties: [
+        {
+          Name: Type,
+          Value: Node
+        },
+        {
+          Name: Kind,
+          Value: NamespaceDeclaration
         }
       ]
     },
     {
       IsExpanded: false,
       Node: {Scrubbed},
-      KindText: EndOfFileToken
+      KindText: EndOfFileToken,
+      Properties: [
+        {
+          Name: Type,
+          Value: Token
+        },
+        {
+          Name: Kind,
+          Value: EndOfFileToken
+        }
+      ]
+    }
+  ],
+  Properties: [
+    {
+      Name: Type,
+      Value: Node
+    },
+    {
+      Name: Kind,
+      Value: CompilationUnit
     }
   ]
 }

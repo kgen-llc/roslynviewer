@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Microsoft.CodeAnalysis.CSharp;
 
 public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
 {
@@ -26,6 +27,9 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
 
     public Location GetLocation() => Node.GetLocation();
 
+
+    public string KindText { get => this.Node.Kind().ToString();}
+
     public IReadOnlyList<ITreeNodeViewModel> Children => this.children ??= new List<ITreeNodeViewModel>(InternalChildren);
     
 
@@ -40,6 +44,11 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
             : Enumerable.Empty<ITreeNodeViewModel>() ));
     }
 
+    public IReadOnlyList<PropertyInfo> Properties => [
+        new PropertyInfo("Type", "Node"),
+        new PropertyInfo("Kind", KindText),
+    ];
+
     public static ITreeNodeViewModel CreateViewModel(SyntaxTrivia trivia) {
         return new SyntaxTriviaViewModel(trivia);
     }
@@ -53,6 +62,8 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
         }
         throw new NotImplementedException();
     }
+
+    
 
     
 }
