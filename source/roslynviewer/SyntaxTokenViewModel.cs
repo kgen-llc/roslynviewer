@@ -34,6 +34,8 @@ public class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
     public IReadOnlyList<PropertyInfo> Properties => [
         new PropertyInfo("Type", "Token"),
         new PropertyInfo("Kind", KindText),
+        new PropertyInfo("Language", this.Node.Language),
+        new PropertyInfo("Location", this.GetLocation().GetLineSpan().ToString()),
     ];
 
     private IEnumerable<ITreeNodeViewModel> InternalChildren {

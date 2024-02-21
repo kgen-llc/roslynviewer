@@ -27,11 +27,13 @@ public class SyntaxTriviaViewModel  : ObservableObject, ITreeNodeViewModel
     public IReadOnlyList<PropertyInfo> Properties => [
         new PropertyInfo("Type", "Trivia"),
         new PropertyInfo("Kind", KindText),
+        new PropertyInfo("Language", this.Node.Language),
+        new PropertyInfo("Location", this.GetLocation().GetLineSpan().ToString()),
     ];
 
     public Location GetLocation() => Node.GetLocation();
 
     public string KindText { get => this.Node.Kind().ToString();}
 
-    public IReadOnlyList<ITreeNodeViewModel> Children => Array.Empty<ITreeNodeViewModel>();
+    public IReadOnlyList<ITreeNodeViewModel> Children => [];
 }

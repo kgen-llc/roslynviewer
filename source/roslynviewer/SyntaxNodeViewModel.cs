@@ -47,6 +47,9 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
     public IReadOnlyList<PropertyInfo> Properties => [
         new PropertyInfo("Type", "Node"),
         new PropertyInfo("Kind", KindText),
+        new PropertyInfo("Language", this.Node.Language),
+        new PropertyInfo("Location", this.GetLocation().GetLineSpan().ToString()),
+        
     ];
 
     public static ITreeNodeViewModel CreateViewModel(SyntaxTrivia trivia) {

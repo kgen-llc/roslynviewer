@@ -14,6 +14,14 @@
         {
           Name: Kind,
           Value: SingleLineCommentTrivia
+        },
+        {
+          Name: Language,
+          Value: C#
+        },
+        {
+          Name: Location,
+          Value: : (0,0)-(0,23)
         }
       ],
       KindText: SingleLineCommentTrivia
@@ -29,6 +37,14 @@
         {
           Name: Kind,
           Value: EndOfLineTrivia
+        },
+        {
+          Name: Language,
+          Value: C#
+        },
+        {
+          Name: Location,
+          Value: : (0,23)-(1,0)
         }
       ],
       KindText: EndOfLineTrivia
@@ -49,6 +65,14 @@
             {
               Name: Kind,
               Value: SingleLineCommentTrivia
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (0,0)-(0,23)
             }
           ],
           KindText: SingleLineCommentTrivia
@@ -64,6 +88,14 @@
             {
               Name: Kind,
               Value: EndOfLineTrivia
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (0,23)-(1,0)
             }
           ],
           KindText: EndOfLineTrivia
@@ -84,6 +116,14 @@
                 {
                   Name: Kind,
                   Value: SingleLineCommentTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (0,0)-(0,23)
                 }
               ],
               KindText: SingleLineCommentTrivia
@@ -99,6 +139,14 @@
                 {
                   Name: Kind,
                   Value: EndOfLineTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (0,23)-(1,0)
                 }
               ],
               KindText: EndOfLineTrivia
@@ -114,6 +162,14 @@
                 {
                   Name: Kind,
                   Value: WhitespaceTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (1,9)-(1,10)
                 }
               ],
               KindText: WhitespaceTrivia
@@ -127,6 +183,14 @@
             {
               Name: Kind,
               Value: NamespaceKeyword
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (1,0)-(1,9)
             }
           ]
         },
@@ -151,6 +215,14 @@
                     {
                       Name: Kind,
                       Value: EndOfLineTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (1,20)-(2,0)
                     }
                   ],
                   KindText: EndOfLineTrivia
@@ -164,6 +236,14 @@
                 {
                   Name: Kind,
                   Value: IdentifierToken
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (1,10)-(1,20)
                 }
               ]
             },
@@ -178,6 +258,14 @@
                 {
                   Name: Kind,
                   Value: EndOfLineTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (1,20)-(2,0)
                 }
               ],
               KindText: EndOfLineTrivia
@@ -191,6 +279,14 @@
             {
               Name: Kind,
               Value: IdentifierName
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (1,10)-(1,20)
             }
           ]
         },
@@ -210,6 +306,14 @@
                 {
                   Name: Kind,
                   Value: EndOfLineTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (2,1)-(3,0)
                 }
               ],
               KindText: EndOfLineTrivia
@@ -223,6 +327,14 @@
             {
               Name: Kind,
               Value: OpenBraceToken
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (2,0)-(2,1)
             }
           ]
         },
@@ -242,6 +354,14 @@
                 {
                   Name: Kind,
                   Value: WhitespaceTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (3,0)-(3,4)
                 }
               ],
               KindText: WhitespaceTrivia
@@ -262,6 +382,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (3,0)-(3,4)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -277,6 +405,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (3,9)-(3,10)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -290,6 +426,14 @@
                 {
                   Name: Kind,
                   Value: ClassKeyword
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (3,4)-(3,9)
                 }
               ]
             },
@@ -309,6 +453,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (3,15)-(3,16)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -322,6 +474,14 @@
                 {
                   Name: Kind,
                   Value: IdentifierToken
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (3,10)-(3,15)
                 }
               ]
             },
@@ -341,6 +501,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (3,17)-(3,26)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -356,6 +524,14 @@
                     {
                       Name: Kind,
                       Value: EndOfLineTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (3,26)-(4,0)
                     }
                   ],
                   KindText: EndOfLineTrivia
@@ -369,6 +545,14 @@
                 {
                   Name: Kind,
                   Value: OpenBraceToken
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (3,16)-(3,17)
                 }
               ]
             },
@@ -388,6 +572,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (4,0)-(4,8)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -408,6 +600,14 @@
                         {
                           Name: Kind,
                           Value: WhitespaceTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,0)-(4,8)
                         }
                       ],
                       KindText: WhitespaceTrivia
@@ -423,6 +623,14 @@
                         {
                           Name: Kind,
                           Value: WhitespaceTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,14)-(4,15)
                         }
                       ],
                       KindText: WhitespaceTrivia
@@ -436,6 +644,14 @@
                     {
                       Name: Kind,
                       Value: StaticKeyword
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (4,8)-(4,14)
                     }
                   ]
                 },
@@ -460,6 +676,14 @@
                             {
                               Name: Kind,
                               Value: WhitespaceTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (4,19)-(4,20)
                             }
                           ],
                           KindText: WhitespaceTrivia
@@ -473,6 +697,14 @@
                         {
                           Name: Kind,
                           Value: VoidKeyword
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,15)-(4,19)
                         }
                       ]
                     },
@@ -487,6 +719,14 @@
                         {
                           Name: Kind,
                           Value: WhitespaceTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,19)-(4,20)
                         }
                       ],
                       KindText: WhitespaceTrivia
@@ -500,6 +740,14 @@
                     {
                       Name: Kind,
                       Value: PredefinedType
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (4,15)-(4,19)
                     }
                   ]
                 },
@@ -515,6 +763,14 @@
                     {
                       Name: Kind,
                       Value: IdentifierToken
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (4,20)-(4,24)
                     }
                   ]
                 },
@@ -535,6 +791,14 @@
                         {
                           Name: Kind,
                           Value: OpenParenToken
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,24)-(4,25)
                         }
                       ]
                     },
@@ -565,6 +829,14 @@
                                     {
                                       Name: Kind,
                                       Value: StringKeyword
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (4,25)-(4,31)
                                     }
                                   ]
                                 }
@@ -577,6 +849,14 @@
                                 {
                                   Name: Kind,
                                   Value: PredefinedType
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (4,25)-(4,31)
                                 }
                               ]
                             },
@@ -597,6 +877,14 @@
                                     {
                                       Name: Kind,
                                       Value: OpenBracketToken
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (4,31)-(4,32)
                                     }
                                   ]
                                 },
@@ -617,6 +905,14 @@
                                         {
                                           Name: Kind,
                                           Value: OmittedArraySizeExpressionToken
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (4,32)-(4,32)
                                         }
                                       ]
                                     }
@@ -629,6 +925,14 @@
                                     {
                                       Name: Kind,
                                       Value: OmittedArraySizeExpression
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (4,32)-(4,32)
                                     }
                                   ]
                                 },
@@ -648,6 +952,14 @@
                                         {
                                           Name: Kind,
                                           Value: WhitespaceTrivia
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (4,33)-(4,34)
                                         }
                                       ],
                                       KindText: WhitespaceTrivia
@@ -661,6 +973,14 @@
                                     {
                                       Name: Kind,
                                       Value: CloseBracketToken
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (4,32)-(4,33)
                                     }
                                   ]
                                 },
@@ -675,6 +995,14 @@
                                     {
                                       Name: Kind,
                                       Value: WhitespaceTrivia
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (4,33)-(4,34)
                                     }
                                   ],
                                   KindText: WhitespaceTrivia
@@ -688,6 +1016,14 @@
                                 {
                                   Name: Kind,
                                   Value: ArrayRankSpecifier
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (4,31)-(4,33)
                                 }
                               ]
                             },
@@ -702,6 +1038,14 @@
                                 {
                                   Name: Kind,
                                   Value: WhitespaceTrivia
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (4,33)-(4,34)
                                 }
                               ],
                               KindText: WhitespaceTrivia
@@ -715,6 +1059,14 @@
                             {
                               Name: Kind,
                               Value: ArrayType
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (4,25)-(4,33)
                             }
                           ]
                         },
@@ -730,6 +1082,14 @@
                             {
                               Name: Kind,
                               Value: IdentifierToken
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (4,34)-(4,38)
                             }
                           ]
                         }
@@ -742,6 +1102,14 @@
                         {
                           Name: Kind,
                           Value: Parameter
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,25)-(4,38)
                         }
                       ]
                     },
@@ -761,6 +1129,14 @@
                             {
                               Name: Kind,
                               Value: EndOfLineTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (4,39)-(5,0)
                             }
                           ],
                           KindText: EndOfLineTrivia
@@ -774,6 +1150,14 @@
                         {
                           Name: Kind,
                           Value: CloseParenToken
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,38)-(4,39)
                         }
                       ]
                     },
@@ -788,6 +1172,14 @@
                         {
                           Name: Kind,
                           Value: EndOfLineTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (4,39)-(5,0)
                         }
                       ],
                       KindText: EndOfLineTrivia
@@ -801,6 +1193,14 @@
                     {
                       Name: Kind,
                       Value: ParameterList
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (4,24)-(4,39)
                     }
                   ]
                 },
@@ -820,6 +1220,14 @@
                         {
                           Name: Kind,
                           Value: WhitespaceTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (5,0)-(5,8)
                         }
                       ],
                       KindText: WhitespaceTrivia
@@ -840,6 +1248,14 @@
                             {
                               Name: Kind,
                               Value: WhitespaceTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (5,0)-(5,8)
                             }
                           ],
                           KindText: WhitespaceTrivia
@@ -855,6 +1271,14 @@
                             {
                               Name: Kind,
                               Value: EndOfLineTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (5,9)-(6,0)
                             }
                           ],
                           KindText: EndOfLineTrivia
@@ -868,6 +1292,14 @@
                         {
                           Name: Kind,
                           Value: OpenBraceToken
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (5,8)-(5,9)
                         }
                       ]
                     },
@@ -887,6 +1319,14 @@
                             {
                               Name: Kind,
                               Value: WhitespaceTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (6,0)-(6,12)
                             }
                           ],
                           KindText: WhitespaceTrivia
@@ -907,6 +1347,14 @@
                                 {
                                   Name: Kind,
                                   Value: WhitespaceTrivia
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (6,0)-(6,12)
                                 }
                               ],
                               KindText: WhitespaceTrivia
@@ -927,6 +1375,14 @@
                                     {
                                       Name: Kind,
                                       Value: WhitespaceTrivia
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,0)-(6,12)
                                     }
                                   ],
                                   KindText: WhitespaceTrivia
@@ -947,6 +1403,14 @@
                                         {
                                           Name: Kind,
                                           Value: WhitespaceTrivia
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,0)-(6,12)
                                         }
                                       ],
                                       KindText: WhitespaceTrivia
@@ -967,6 +1431,14 @@
                                             {
                                               Name: Kind,
                                               Value: WhitespaceTrivia
+                                            },
+                                            {
+                                              Name: Language,
+                                              Value: C#
+                                            },
+                                            {
+                                              Name: Location,
+                                              Value: : (6,0)-(6,12)
                                             }
                                           ],
                                           KindText: WhitespaceTrivia
@@ -987,6 +1459,14 @@
                                                 {
                                                   Name: Kind,
                                                   Value: WhitespaceTrivia
+                                                },
+                                                {
+                                                  Name: Language,
+                                                  Value: C#
+                                                },
+                                                {
+                                                  Name: Location,
+                                                  Value: : (6,0)-(6,12)
                                                 }
                                               ],
                                               KindText: WhitespaceTrivia
@@ -1000,6 +1480,14 @@
                                             {
                                               Name: Kind,
                                               Value: IdentifierToken
+                                            },
+                                            {
+                                              Name: Language,
+                                              Value: C#
+                                            },
+                                            {
+                                              Name: Location,
+                                              Value: : (6,12)-(6,18)
                                             }
                                           ]
                                         }
@@ -1012,6 +1500,14 @@
                                         {
                                           Name: Kind,
                                           Value: IdentifierName
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,12)-(6,18)
                                         }
                                       ]
                                     },
@@ -1027,6 +1523,14 @@
                                         {
                                           Name: Kind,
                                           Value: DotToken
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,18)-(6,19)
                                         }
                                       ]
                                     },
@@ -1047,6 +1551,14 @@
                                             {
                                               Name: Kind,
                                               Value: IdentifierToken
+                                            },
+                                            {
+                                              Name: Language,
+                                              Value: C#
+                                            },
+                                            {
+                                              Name: Location,
+                                              Value: : (6,19)-(6,26)
                                             }
                                           ]
                                         }
@@ -1059,6 +1571,14 @@
                                         {
                                           Name: Kind,
                                           Value: IdentifierName
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,19)-(6,26)
                                         }
                                       ]
                                     }
@@ -1071,6 +1591,14 @@
                                     {
                                       Name: Kind,
                                       Value: SimpleMemberAccessExpression
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,12)-(6,26)
                                     }
                                   ]
                                 },
@@ -1086,6 +1614,14 @@
                                     {
                                       Name: Kind,
                                       Value: DotToken
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,26)-(6,27)
                                     }
                                   ]
                                 },
@@ -1106,6 +1642,14 @@
                                         {
                                           Name: Kind,
                                           Value: IdentifierToken
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,27)-(6,36)
                                         }
                                       ]
                                     }
@@ -1118,6 +1662,14 @@
                                     {
                                       Name: Kind,
                                       Value: IdentifierName
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,27)-(6,36)
                                     }
                                   ]
                                 }
@@ -1130,6 +1682,14 @@
                                 {
                                   Name: Kind,
                                   Value: SimpleMemberAccessExpression
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (6,12)-(6,36)
                                 }
                               ]
                             },
@@ -1150,6 +1710,14 @@
                                     {
                                       Name: Kind,
                                       Value: OpenParenToken
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,36)-(6,37)
                                     }
                                   ]
                                 },
@@ -1175,6 +1743,14 @@
                                             {
                                               Name: Kind,
                                               Value: StringLiteralToken
+                                            },
+                                            {
+                                              Name: Language,
+                                              Value: C#
+                                            },
+                                            {
+                                              Name: Location,
+                                              Value: : (6,37)-(6,51)
                                             }
                                           ]
                                         }
@@ -1187,6 +1763,14 @@
                                         {
                                           Name: Kind,
                                           Value: StringLiteralExpression
+                                        },
+                                        {
+                                          Name: Language,
+                                          Value: C#
+                                        },
+                                        {
+                                          Name: Location,
+                                          Value: : (6,37)-(6,51)
                                         }
                                       ]
                                     }
@@ -1199,6 +1783,14 @@
                                     {
                                       Name: Kind,
                                       Value: Argument
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,37)-(6,51)
                                     }
                                   ]
                                 },
@@ -1214,6 +1806,14 @@
                                     {
                                       Name: Kind,
                                       Value: CloseParenToken
+                                    },
+                                    {
+                                      Name: Language,
+                                      Value: C#
+                                    },
+                                    {
+                                      Name: Location,
+                                      Value: : (6,51)-(6,52)
                                     }
                                   ]
                                 }
@@ -1226,6 +1826,14 @@
                                 {
                                   Name: Kind,
                                   Value: ArgumentList
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (6,36)-(6,52)
                                 }
                               ]
                             }
@@ -1238,6 +1846,14 @@
                             {
                               Name: Kind,
                               Value: InvocationExpression
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (6,12)-(6,52)
                             }
                           ]
                         },
@@ -1257,6 +1873,14 @@
                                 {
                                   Name: Kind,
                                   Value: EndOfLineTrivia
+                                },
+                                {
+                                  Name: Language,
+                                  Value: C#
+                                },
+                                {
+                                  Name: Location,
+                                  Value: : (6,53)-(7,0)
                                 }
                               ],
                               KindText: EndOfLineTrivia
@@ -1270,6 +1894,14 @@
                             {
                               Name: Kind,
                               Value: SemicolonToken
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (6,52)-(6,53)
                             }
                           ]
                         },
@@ -1284,6 +1916,14 @@
                             {
                               Name: Kind,
                               Value: EndOfLineTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (6,53)-(7,0)
                             }
                           ],
                           KindText: EndOfLineTrivia
@@ -1297,6 +1937,14 @@
                         {
                           Name: Kind,
                           Value: ExpressionStatement
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (6,12)-(6,53)
                         }
                       ]
                     },
@@ -1316,6 +1964,14 @@
                             {
                               Name: Kind,
                               Value: WhitespaceTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (7,0)-(7,8)
                             }
                           ],
                           KindText: WhitespaceTrivia
@@ -1331,6 +1987,14 @@
                             {
                               Name: Kind,
                               Value: EndOfLineTrivia
+                            },
+                            {
+                              Name: Language,
+                              Value: C#
+                            },
+                            {
+                              Name: Location,
+                              Value: : (7,9)-(8,0)
                             }
                           ],
                           KindText: EndOfLineTrivia
@@ -1344,6 +2008,14 @@
                         {
                           Name: Kind,
                           Value: CloseBraceToken
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (7,8)-(7,9)
                         }
                       ]
                     },
@@ -1358,6 +2030,14 @@
                         {
                           Name: Kind,
                           Value: EndOfLineTrivia
+                        },
+                        {
+                          Name: Language,
+                          Value: C#
+                        },
+                        {
+                          Name: Location,
+                          Value: : (7,9)-(8,0)
                         }
                       ],
                       KindText: EndOfLineTrivia
@@ -1371,6 +2051,14 @@
                     {
                       Name: Kind,
                       Value: Block
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (5,8)-(7,9)
                     }
                   ]
                 },
@@ -1385,6 +2073,14 @@
                     {
                       Name: Kind,
                       Value: EndOfLineTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (7,9)-(8,0)
                     }
                   ],
                   KindText: EndOfLineTrivia
@@ -1398,6 +2094,14 @@
                 {
                   Name: Kind,
                   Value: MethodDeclaration
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (4,8)-(7,9)
                 }
               ]
             },
@@ -1417,6 +2121,14 @@
                     {
                       Name: Kind,
                       Value: WhitespaceTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (8,0)-(8,4)
                     }
                   ],
                   KindText: WhitespaceTrivia
@@ -1432,6 +2144,14 @@
                     {
                       Name: Kind,
                       Value: EndOfLineTrivia
+                    },
+                    {
+                      Name: Language,
+                      Value: C#
+                    },
+                    {
+                      Name: Location,
+                      Value: : (8,5)-(9,0)
                     }
                   ],
                   KindText: EndOfLineTrivia
@@ -1445,6 +2165,14 @@
                 {
                   Name: Kind,
                   Value: CloseBraceToken
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (8,4)-(8,5)
                 }
               ]
             },
@@ -1459,6 +2187,14 @@
                 {
                   Name: Kind,
                   Value: EndOfLineTrivia
+                },
+                {
+                  Name: Language,
+                  Value: C#
+                },
+                {
+                  Name: Location,
+                  Value: : (8,5)-(9,0)
                 }
               ],
               KindText: EndOfLineTrivia
@@ -1472,6 +2208,14 @@
             {
               Name: Kind,
               Value: ClassDeclaration
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (3,4)-(8,5)
             }
           ]
         },
@@ -1487,6 +2231,14 @@
             {
               Name: Kind,
               Value: CloseBraceToken
+            },
+            {
+              Name: Language,
+              Value: C#
+            },
+            {
+              Name: Location,
+              Value: : (9,0)-(9,1)
             }
           ]
         }
@@ -1499,6 +2251,14 @@
         {
           Name: Kind,
           Value: NamespaceDeclaration
+        },
+        {
+          Name: Language,
+          Value: C#
+        },
+        {
+          Name: Location,
+          Value: : (1,0)-(9,1)
         }
       ]
     },
@@ -1514,6 +2274,14 @@
         {
           Name: Kind,
           Value: EndOfFileToken
+        },
+        {
+          Name: Language,
+          Value: C#
+        },
+        {
+          Name: Location,
+          Value: : (9,1)-(9,1)
         }
       ]
     }
@@ -1526,6 +2294,14 @@
     {
       Name: Kind,
       Value: CompilationUnit
+    },
+    {
+      Name: Language,
+      Value: C#
+    },
+    {
+      Name: Location,
+      Value: : (1,0)-(9,1)
     }
   ]
 }

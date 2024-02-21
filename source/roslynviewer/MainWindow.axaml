@@ -17,7 +17,7 @@
      </Window.Resources>
      <Grid
            ColumnDefinitions="*,*"
-           RowDefinitions="Auto,Auto,*,100">
+           RowDefinitions="Auto,Auto,*,200">
           <Menu
                 Grid.Row="0">
                <MenuItem
