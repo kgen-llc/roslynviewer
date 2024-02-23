@@ -20,7 +20,8 @@ roslynviewer
 
 ## Status
 
-![Latest version](https://img.shields.io/nuget/v/kgen.roslynviewer)
+![Latest version](https://img.shields.io/nuget/v/kgen.roslynviewer) ![Download Count](https://img.shields.io/nuget/dt/kgen.roslynviewer)
+
 
 [![CI](https://github.com/kgen-llc/roslynviewer/actions/workflows/dev-build.yml/badge.svg?branch=dev)](https://github.com/kgen-llc/roslynviewer/actions/workflows/dev-build.yml)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/kgen-llc/roslynviewer)](https://github.com/kgen-llc/roslynviewer/graphs/commit-activity)
