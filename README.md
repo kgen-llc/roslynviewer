@@ -17,6 +17,8 @@ and then simply on a command line :
 roslynviewer
 ```
 
+It means it should work on any .NET platform,  Microsoft Windows, Apple MacOS - Intel or Mac, Linux
+
 
 ## Status
 
