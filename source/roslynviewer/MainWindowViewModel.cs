@@ -23,9 +23,11 @@ public class MainWindowViewModel : ObservableObject
         {
             var assembly = Assembly.GetEntryAssembly()!;
 
-            return assembly.GetCustomAttribute<AssemblyProductAttribute>()!.Product + " " + assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion.ToString()
+            return assembly.GetCustomAttribute<AssemblyProductAttribute>()!.Product + " " + withShortSha(assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()!.InformationalVersion)
                 + " - " + assembly.GetCustomAttribute<AssemblyCopyrightAttribute>()!.Copyright;
         }
+
+        static string withShortSha(string version) => version[..(version.IndexOf('+', System.StringComparison.OrdinalIgnoreCase)+7)];
     }
     private string sourceCode;
     private IReadOnlyCollection<SyntaxNodeViewModel> syntaxTreeRoot;
