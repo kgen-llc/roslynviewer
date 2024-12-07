@@ -3,5 +3,6 @@
     "cSpell.words": [
         "Avalonia",
         "roslynviewer"
-    ]
+    ],
+    "cmake.configureOnOpen": false
 }
