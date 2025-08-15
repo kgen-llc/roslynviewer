@@ -3,6 +3,7 @@ namespace roslynviewer;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using KGen.Framework.Avalonia.Telemetry;
 
 internal partial class App : Application
 {
@@ -15,9 +16,13 @@ internal partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            var mainWindow = new MainWindow();
-            mainWindow.InitDataContext(desktop);
-            desktop.MainWindow = mainWindow;
+            
+            desktop.MainWindow = new ConsentDialog( () =>
+            {
+                var mainWindow = new MainWindow();
+                mainWindow.InitDataContext(desktop);
+                return mainWindow;
+            });
         }
 
         base.OnFrameworkInitializationCompleted();
