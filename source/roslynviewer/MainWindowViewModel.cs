@@ -8,12 +8,16 @@ using Microsoft.CodeAnalysis.CSharp;
 using System.Reflection;
 using System.Linq;
 using AvaloniaEdit;
+using Avalonia.Platform.Storage;
+using System;
+using System.Threading.Tasks;
 
 internal class MainWindowViewModel : ObservableObject
 {
-    public MainWindowViewModel(IControlledApplicationLifetime controlledApplicationLifetime)
+    public MainWindowViewModel(IControlledApplicationLifetime controlledApplicationLifetime, ILauncher launcher)
     {
         this.controlledApplicationLifetime = controlledApplicationLifetime;
+        this.launcher = launcher;
         this.sourceCode = string.Empty;
         this.syntaxTreeRoot = new List<SyntaxNodeViewModel>();
 
@@ -33,6 +37,7 @@ internal class MainWindowViewModel : ObservableObject
     private IReadOnlyCollection<SyntaxNodeViewModel> syntaxTreeRoot;
 
     private readonly IControlledApplicationLifetime controlledApplicationLifetime;
+    private readonly ILauncher launcher;
 
     public string SourceCode
     {
@@ -70,9 +75,9 @@ internal class MainWindowViewModel : ObservableObject
         this.controlledApplicationLifetime.Shutdown(0);
     }
 
-    public static void AboutCommand()
+    public async Task AboutCommand()
     {
-        "https://github.com/kgen-llc/roslynviewer".OpenUrl();
+        await this.launcher.LaunchUriAsync(new Uri("https://github.com/kgen-llc/roslynviewer")).ConfigureAwait(false);
     }
 
     public void LocateInSyntaxTreeCommand(object textEditor)

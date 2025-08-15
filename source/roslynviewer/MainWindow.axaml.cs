@@ -11,8 +11,7 @@ internal partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-
-         SetupMate();
+        SetupMate();
     }
 
     public void SetupMate() {
@@ -27,7 +26,8 @@ internal partial class MainWindow : Window
     }
 
     public void InitDataContext(IControlledApplicationLifetime controlledApplicationLifetime) {
-        var viewModel = new MainWindowViewModel(controlledApplicationLifetime);
+        
+        var viewModel = new MainWindowViewModel(controlledApplicationLifetime, TopLevel.GetTopLevel(this)!.Launcher);
 
         bindingText();
 
