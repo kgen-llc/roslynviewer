@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="roslynviewer.tests/roslynviewer.tests.csproj" />
+  <Project Path="roslynviewer/roslynviewer.csproj" />
+</Solution>
