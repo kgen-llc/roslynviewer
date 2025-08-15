@@ -4,22 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace roslynviewer;
 
-public class InvalidUrlException : Exception
-{
-    public InvalidUrlException(string message, Exception innerException) : base(message, innerException)
-    {
-    }
-
-    public InvalidUrlException(string message) : base(message)
-    {
-    }
-
-    public InvalidUrlException()
-    {
-    }
-}
-
-public static class OpenUrlExtension
+internal static class OpenUrlExtension
 {
 
     private static bool IsValidUrl(string url)
@@ -27,7 +12,7 @@ public static class OpenUrlExtension
         if (string.IsNullOrWhiteSpace(url)) return false;
         if (!Uri.IsWellFormedUriString(url, UriKind.Absolute)) return false;
         if (!Uri.TryCreate(url, UriKind.Absolute, out var tmp)) return false;
-        return tmp.Scheme == Uri.UriSchemeHttp || tmp.Scheme == Uri.UriSchemeHttps;
+        return string.Equals(tmp.Scheme, Uri.UriSchemeHttp, StringComparison.OrdinalIgnoreCase) || string.Equals(tmp.Scheme, Uri.UriSchemeHttps, StringComparison.OrdinalIgnoreCase);
     }
 
 #pragma warning disable CA1054 // we want to keep it simple
@@ -35,7 +20,7 @@ public static class OpenUrlExtension
 #pragma warning restore CA1054
     {
         if (!IsValidUrl(url)) throw new InvalidUrlException("invalid url: " + url);
-        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+        if (OperatingSystem.IsWindows())
         {
             //https://stackoverflow.com/a/2796367/241446
             using var proc = new Process { StartInfo = { UseShellExecute = true, FileName = url } };
@@ -44,13 +29,13 @@ public static class OpenUrlExtension
             return;
         }
 
-        if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
+        if (OperatingSystem.IsLinux())
         {
             Process.Start("x-www-browser", url);
             return;
         }
 
-        if (!RuntimeInformation.IsOSPlatform(OSPlatform.OSX)) throw new InvalidUrlException("invalid url: " + url);
+        if (!OperatingSystem.IsMacOS()) throw new InvalidUrlException("invalid url: " + url);
         Process.Start("open", url);
         return;
     }

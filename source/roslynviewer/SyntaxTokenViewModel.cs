@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis.CSharp;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 
-public class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
+internal class SyntaxTokenViewModel  : ObservableObject, ITreeNodeViewModel
 {
     private IReadOnlyList<ITreeNodeViewModel>? children;
 

@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Linq;
 using AvaloniaEdit;
 
-public class MainWindowViewModel : ObservableObject
+internal class MainWindowViewModel : ObservableObject
 {
     public MainWindowViewModel(IControlledApplicationLifetime controlledApplicationLifetime)
     {

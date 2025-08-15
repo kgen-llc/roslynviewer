@@ -22,11 +22,12 @@
     <Copyright>Copyright 2024 KGEN LLC</Copyright>
     <PackageIcon>Assets/icon.png</PackageIcon>
     <ApplicationIcon>Assets/icon.ico</ApplicationIcon>
-    <NeutralLanguage>en</NeutralLanguage>
+    <NeutralLanguage>en</NeutralLanguage>    
   </PropertyGroup>
  
 	<ItemGroup>
-		<AvaloniaResource Include="Assets\**" />
+    <InternalsVisibleTo Include="roslynviewer.tests" />
+		<AvaloniaResource Include="Assets\**" />    
 	</ItemGroup>
 
   <ItemGroup>

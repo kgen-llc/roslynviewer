@@ -6,7 +6,7 @@ using TextMateSharp.Grammars;
 
 using Avalonia.Controls.ApplicationLifetimes;
 
-public partial class MainWindow : Window
+internal partial class MainWindow : Window
 {
     public MainWindow()
     {
@@ -43,7 +43,7 @@ public partial class MainWindow : Window
 
         void bindingSelection() {
             this.tree.PropertyChanged += (sender, args) => {
-                if(args.Property.Name == nameof(this.tree.SelectedItem)
+                if(args.Property.Name is nameof(this.tree.SelectedItem)
                     && this.tree.SelectedItem is ILocationProvider locationProvider) {
                     
                     var location = locationProvider.GetLocation().SourceSpan;

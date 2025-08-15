@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis.CSharp;
 
 using CommunityToolkit.Mvvm.ComponentModel;
 
-public class SyntaxTriviaViewModel  : ObservableObject, ITreeNodeViewModel
+internal class SyntaxTriviaViewModel  : ObservableObject, ITreeNodeViewModel
 {
     public SyntaxTriviaViewModel(SyntaxTrivia trivia)
     {

@@ -7,7 +7,7 @@ using Avalonia.Data;
 
 using Microsoft.CodeAnalysis;
 
-public class ToFullStringConverter : IValueConverter
+internal class ToFullStringConverter : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {

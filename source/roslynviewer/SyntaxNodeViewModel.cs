@@ -7,7 +7,7 @@ using Microsoft.CodeAnalysis;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.CodeAnalysis.CSharp;
 
-public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
+internal class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
 {
     private IReadOnlyList<ITreeNodeViewModel>? children;
 
@@ -30,18 +30,18 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
 
     public string KindText { get => this.Node.Kind().ToString();}
 
-    public IReadOnlyList<ITreeNodeViewModel> Children => this.children ??= new List<ITreeNodeViewModel>(InternalChildren);
+    public IReadOnlyList<ITreeNodeViewModel> Children => this.children ??= [.. InternalChildren];
     
 
     private IEnumerable<ITreeNodeViewModel> InternalChildren {
         get => 
         (this.Node.HasLeadingTrivia 
             ? this.Node.GetLeadingTrivia().Select(CreateViewModel)
-            : Enumerable.Empty<ITreeNodeViewModel>() )
+            : [])
         .Concat(this.Node.ChildNodesAndTokens().Select(CreateViewModel))
-        .Concat((this.Node.HasTrailingTrivia 
+        .Concat(this.Node.HasTrailingTrivia 
             ? this.Node.GetTrailingTrivia().Select(CreateViewModel)
-            : Enumerable.Empty<ITreeNodeViewModel>() ));
+            : []);
     }
 
     public IReadOnlyList<PropertyInfo> Properties => [
@@ -56,17 +56,13 @@ public class SyntaxNodeViewModel : ObservableObject, ITreeNodeViewModel
         return new SyntaxTriviaViewModel(trivia);
     }
 
-    public static ITreeNodeViewModel CreateViewModel(SyntaxNodeOrToken nodeOrToken) {
+    internal static ITreeNodeViewModel CreateViewModel(SyntaxNodeOrToken nodeOrToken) {
         if(nodeOrToken.IsNode) {
             return new SyntaxNodeViewModel(nodeOrToken.AsNode()!);
         }
         if(nodeOrToken.IsToken) {
             return new SyntaxTokenViewModel(nodeOrToken.AsToken());
         }
-        throw new NotImplementedException();
+        throw new NotSupportedException();
     }
-
-    
-
-    
 }

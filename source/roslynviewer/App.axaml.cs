@@ -4,7 +4,7 @@ using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 
-public partial class App : Application
+internal partial class App : Application
 {
     public override void Initialize()
     {
